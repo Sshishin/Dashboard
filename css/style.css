@@ -4,14 +4,15 @@
 }
 
 body {
-    background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: rgb(133,18,255);
+    background: linear-gradient(90deg, rgba(133,18,255,1) 0%, rgba(15,46,82,1) 100%);
 }
 
 .main-block {
     max-width: 900px;
     height: 500px;
-    background-color: aliceblue;
+    background: rgb(255,255,255);
+background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,246,255,1) 89%, rgba(241,248,255,1) 100%);
     margin: 60px auto 0 auto;
     padding: 25px;
     border-radius: 20px;
@@ -38,9 +39,7 @@ body {
 }
 
 .left-sidebar {
-    background-color: blue;
     grid-area: aside;
-    border-radius: 20px;
 }
 
 .hero {
@@ -69,14 +68,10 @@ body {
     grid-template-rows: 236.66px 1fr;
 }
 
-.right-item {
-    border-radius: 20px;
-    background-color: blue;
-}
-
 .item {
-    background-color: blue;
+    background-color:aliceblue;
     border-radius: 20px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5)
 }
 
 .product {
@@ -101,7 +96,3 @@ body {
     grid-template-columns: 415px 1fr;
 }
 
-.navitem {
-    background-color: blue;
-    border-radius: 20px;
-}
