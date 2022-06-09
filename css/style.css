@@ -105,10 +105,6 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,246,255,1) 
     justify-content: space-between;
 }
 
-.name-item {
-    
-}
-
 .name-text {
     padding-left: 10px;
 }
@@ -173,6 +169,69 @@ strong {
     box-shadow: 0px 0px 5px 1px rgba(255, 213, 0, 0.6)
 }
 
-.button-shadow {
-        
-    }
+
+.left-sidebar-block {
+    border: 1px solid black;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 6fr 2fr;
+    padding: 10px;
+    gap: 10px;
+}
+
+.aside-logo-block {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}   
+
+
+
+.aside-help-block {
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+.aside-logo {
+    border: 1px solid black;
+    height: 50px;
+    width: 100px;
+    background-color: red;
+}
+
+.aside-menu-block {
+    border: 1px solid black;
+    display: grid;
+    gap: 5px;
+    padding: 20px 0 20px 0;
+}
+
+.aside-menu__button {
+    border: 1px solid black;
+    background-color: red;
+}
+
+span {
+    padding-left: 20px;
+}
+
+.aside-help-block {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.help-text {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+}
+
+.help-button {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: red;
+}
