@@ -3,6 +3,50 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Inter-LightBETA";
+  font-style: normal;
+  font-weight: 300;
+  src:url(../fonts/Inter-LightBETA.woff);
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src:url(../fonts/Inter-Regular.woff);
+}
+
+@font-face {
+    font-family: "Inter-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src:url(../fonts/Inter-Medium.woff);
+}
+
+@font-face {
+    font-family: "Inter-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src:url(../fonts/Inter-SemiBold.woff);
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src:url(../fonts/Inter-Bold.woff);
+}
+
+@font-face {
+    font-family: "Inter-Black";
+  font-style: normal;
+  font-weight: 900;
+  src:url(../fonts/Inter-Black.woff);
+}
+
+
+
 body {
     background: rgb(133,18,255);
     background: linear-gradient(90deg, rgba(133,18,255,1) 0%, rgba(15,46,82,1) 100%);
@@ -67,7 +111,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,246,255,1) 
 .right-sidebar-grid {
     display: grid;
     gap: 10px;
-    grid-template-rows: 236.66px 1fr;
+    grid-template-rows: 290px 1fr;
 }
 
 .item {
@@ -77,8 +121,92 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,246,255,1) 
     
 }
 
+.item-input {
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.item-input::before {
+    content: "....";
+    padding: 1px;
+    background-color: rgb(133,18,255);
+    color: rgb(133,18,255);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
 .product {
     grid-area: product;
+    padding: 10px 15px;
+}
+
+.up-item__text {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    padding: 5px 0 5px 5px; ;
+}
+.item__change {
+    margin: 0;
+    padding: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+.earning {
+    grid-area: earning;
+    padding: 10px 15px;
+}
+
+.download {
+    grid-area: download;
+    padding: 10px 15px;
+}
+
+.top-users {
+    padding: 10px 15px;
+}
+
+.list-users {
+    counter-reset: item;
+    line-height: 40px;
+    list-style: none;
+    padding: 15px 5px;
+   margin: 0;
+}
+
+.list-item::before {
+    content: counter(item);
+    counter-increment: item;
+
+    padding: 2px 6px;
+    background-color: #ffc800;
+    color: black;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 14px;
+   
+}
+
+.money {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.balances {
+    padding:10px 15px;
+}
+
+.withdraw {
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffc800;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
 }
 
 .refferal {
@@ -102,8 +230,10 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,246,255,1) 
 
 .refferal__right-block {
     width: 40%;
-    
+    display: flex;
+    justify-content: center;
 }
+
 
 .refferal__title {
     color: aliceblue;
@@ -125,15 +255,10 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,246,255,1) 
     
     width: 70%;
     height: auto;
+    
 }
 
-.earning {
-    grid-area: earning;
-}
 
-.download {
-    grid-area: download;
-}
 
 .navigation-block {
     display: grid;
@@ -244,12 +369,14 @@ strong {
     font-size: 30px;
     font-weight: 700;
     color: aliceblue;
+    font-family: "Inter-Black";
 }
 
 .aside-menu-block {
     display: grid;
     gap: 5px;
     padding: 0px 0 20px 0;
+    font-family: "Inter-Regular";
 }
 
 .aside-menu__button {
@@ -267,6 +394,9 @@ background-color: #ffc800;
 
 .admin {
     padding-bottom: 10px;
+    font-family: "Inter-LightBETA";
+    font-size: 13px;
+    opacity: 0.8;
 }
 
 span {
