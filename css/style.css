@@ -51,15 +51,16 @@
 body {
     background: rgb(133,18,255);
     background: linear-gradient(90deg, rgba(133,18,255,1) 0%, rgba(15,46,82,1) 100%);
+    padding: 10px;
 }
 
 .main-block {
     max-width: 1000px;
     height: 580px;
     background: rgb(255,255,255);
-background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,246,255,1) 89%, rgba(241,248,255,1) 100%);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,246,255,1) 89%, rgba(241,248,255,1) 100%);
     margin: 20px auto 0 auto;
-    padding: 25px;
+    padding: 20px;
     border-radius: 20px;
 }
 
@@ -86,7 +87,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,246,255,1) 
 .navigation-block {
     display: grid;
     gap: 10px;
-    grid-template-columns: 465px 1fr;
+    grid-template-columns: 65.72% 1fr;
 }
 
 .left__navigation-block {
@@ -103,6 +104,13 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,246,255,1) 
 strong {
     font-size: 26px;
     font-family: "Inter-Bold";
+}
+
+@media (max-width:992px) {
+    strong {
+        font-size: 18px;
+        font-family: "Inter-Bold";
+    }
 }
 
 .upload-item {
@@ -362,6 +370,26 @@ background-color: #ffc800;
     float: right;
 }
 
+@media (max-width:992px) {
+    .product-img {
+        width: 75px;
+        float: none;
+        margin: 0 auto;
+        display: block;
+
+    }
+}
+
+.up-item--gap {
+    padding-left: 5px;
+}
+
+@media (max-width:992px) {
+    .up-item__wrapper br {
+        display: none;
+    }
+}
+
 .up-item__text {
     font-weight: 700;
     font-size: 25px;
@@ -370,12 +398,32 @@ background-color: #ffc800;
     font-family: "Inter-SemiBold";
 }
 
+@media (max-width:992px) {
+    .up-item__text {
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0;
+        padding: 0; 
+        font-family: "Inter-SemiBold";
+        text-align: center;
+    }
+}
+
 .item__change {
     margin: 0;
     padding: 0 0 0 5px;
     font-size: 12px;
     font-family: "Inter-Regular";
-    
+}
+
+@media (max-width:992px) {
+    .item__change {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        font-family: "Inter-Regular";
+        text-align: center; 
+    }
 }
 
 .earning {
@@ -404,12 +452,29 @@ background-color: #ffc800;
     margin-right: 5px;
 }
 
+@media (max-width:992px) {
+    .item-input {
+        padding: 0px;
+        text-transform: uppercase;
+        font-family: "Inter-SemiBold";
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
 .img-dw {
     float: right;
     width: 100px;
     position: relative;
     bottom: 20px;
-    
+}
+
+@media (max-width:992px) {
+    .img-dw {
+        float: right;
+        width: 100px;
+        position: static;
+    }
 }
 
 .download {
@@ -432,6 +497,17 @@ background-color: #ffc800;
     
 }
 
+@media (max-width:992px) {
+    .download__text {
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0;
+        padding: 20px 0 0 5px; 
+        font-family: "Inter-SemiBold";
+        width: 50%;
+    }
+}
+
 .download__item {
     margin-top: 10px;
     padding: 0 0 0 5px;
@@ -439,6 +515,18 @@ background-color: #ffc800;
     font-family: "Inter-Regular";
     
 }
+
+@media (max-width:992px) {
+    .download__item {
+        margin: 0px;
+        padding: 0;
+        font-size: 12px;
+        font-family: "Inter-Regular";
+        
+    }
+    
+}
+
 
 .right-sidebar {
     grid-area: side;
@@ -461,10 +549,20 @@ background-color: #ffc800;
 
 .list-users {
     counter-reset: item;
-    line-height: 40px;
+    line-height: 45px;
     list-style: none;
-    padding: 15px 5px;
-   margin: 0;
+    padding: 15px 5px 0 0;
+    margin: 0;
+}
+
+@media (max-width:992px) {
+    .list-users {
+        font-size: 14px;
+    }
+}
+
+.list-item {
+    font-family: "Inter-Regular";
 }
 
 .list-item::before {
@@ -480,21 +578,28 @@ background-color: #ffc800;
     font-family: "Inter-SemiBold";
 }
 
-.list-item {
-    font-family: "Inter-Regular";
-}
-
 .btn-side {
     border-radius: 5px;
     padding: 6px;
     border: none;
     background-color: aliceblue;
-    width: 150px;
+    max-width: 70%;
     text-align: left;
 }
 
 .btn-side:hover {
     background-color: #ffc800;
+}
+
+@media (max-width:992px) {
+    .btn-side {
+        border-radius: 5px;
+        padding: 0;
+        border: none;
+        background-color: aliceblue;
+        max-width: 70%;
+        text-align: left;
+    }
 }
 
 .balances {
@@ -514,7 +619,15 @@ background-color: #ffc800;
     font-family: "Inter-SemiBold";
 }
 
-
+@media (max-width:992px) {
+    .money {
+        text-align: center;
+        font-size: 18px;
+        margin: 0;
+        padding: 14px 0;
+        font-family: "Inter-SemiBold";
+    }
+}
 
 .withdraw {
     padding: 7px 14px;
@@ -530,4 +643,14 @@ background-color: #ffc800;
 
 .withdraw:hover {
     box-shadow: 0px 0px 5px 1px rgba(255, 213, 0, 0.6)
+}
+
+
+
+@media (max-width:768px) {
+    
+}
+
+@media (max-width:542px) {
+    
 }
