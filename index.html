@@ -22,8 +22,11 @@
                     </div>
                 </div>
                 <div class="right__navigation-block">
+                    <div class="burger">
+                        <img src="./img/icons8-меню.svg" alt="">
+                    </div>
                     <div class="search-block">
-                        <form>
+                        <form class="input">
                             <input type="text" name="text" class="search" placeholder="Search">
                         </form>
                     </div>
@@ -96,16 +99,25 @@
                 </div>
                 <div class="download item">
                     <div class="item-input">Total Download</div>
-                    <div class="img-dw"><img class="download-img" src="./img/Browser stats-rafiki.svg" alt=""></div>
-                    <p class="download__text"> 10,590 Download</p>
-                    <p class="download__item">+20% this week</p>
+                    <div class="download__wrapper">
+                        <div class="img-dw">
+                            <img class="download-img" src="./img/Browser stats-rafiki.svg" alt="">
+                        </div>
+                            <div class="download__wrapper-text">
+                                <p class="download__text"> 10,590 Download</p>
+                            <p class="download__item">+20% this week</p>
+                        </div>
+                    </div>
                 </div>
             </main>
             <section class="right-sidebar right-sidebar-grid">
                 <div class="top-users item">
                     <div class="item-input">Top Users</div>
-                    <ol class="list-users">
-                        <li class="list-item"><button class="btn-side">Antony Jhoshua</button> </li>
+                    <div class="top-users-wrapper">
+                        <img class="top-users__img" src="./img/Online Review-amico.svg" alt="">
+                    </div>
+                    <ol class="list-users ">
+                        <li class="list-item"><button class="btn-side ">Antony Jhoshua</button> </li>
                         <li class="list-item"><button class="btn-side">Alexander Usyk</button> </li>
                         <li class="list-item"><button class="btn-side">Mike Tyson</button> </li>
                         <li class="list-item"><button class="btn-side">Kanelo Alvarez</button> </li>
@@ -114,8 +126,10 @@
                 </div>
                 <div class="balances item">
                     <div class="item-input">Balances</div>
-                    <p class="money">3905$ / 400$</p>
-                    <button class="withdraw">Withdraw Money</button>
+                    <div class="balances__wrapper">
+                        <p class="money">3905$ / 400$</p>
+                        <button class="withdraw">Withdraw Money</button>
+                    </div>
                 </div>
             </section>
         </div>
